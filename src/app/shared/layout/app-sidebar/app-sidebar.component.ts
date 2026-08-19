@@ -171,14 +171,13 @@ export class AppSidebarComponent {
     });
   }
 
-  onSubmenuClick() {
-    console.log('click submenu');
+  closeMobileMenu() {
     this.isMobileOpen$.subscribe(isMobile => {
       if (isMobile) {
         this.sidebarService.setMobileOpen(false);
       }
     }).unsubscribe();
-  }  
+  }
 
   
 }

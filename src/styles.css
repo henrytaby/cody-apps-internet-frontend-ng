@@ -794,3 +794,10 @@ pre[class*="language-"] {
 pre[class*="language-"].line-numbers {
   padding-left: 2.8em !important;
 }
+
+/* PrimeNG Font Size Harmonization */
+.p-component,
+.p-inputtext,
+.p-button {
+  font-size: 14px !important;
+}

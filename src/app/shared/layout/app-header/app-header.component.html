@@ -4,7 +4,7 @@
     <div
       class="flex items-center justify-between w-full gap-2 px-3 py-3 border-b border-gray-200 dark:border-gray-800 sm:gap-4 xl:justify-normal xl:border-b-0 xl:px-0 lg:py-4">
       <button
-        class="items-center justify-center  w-10 h-10 text-gray-500 border-gray-200 rounded-lg z-40 dark:border-gray-800 flex dark:text-gray-400 lg:h-11 lg:w-11 xl:border"
+        class="items-center justify-center w-9 h-9 text-gray-500 border-gray-200 rounded-lg z-40 dark:border-gray-800 flex dark:text-gray-400 lg:h-10 lg:w-10 xl:border"
         [ngClass]="{
           'bg-gray-100 dark:bg-white/[0.03]': isMobileOpen$ | async
         }"
@@ -27,11 +27,16 @@
       </button>
       <!-- Logo (placeholder) -->
       <a routerLink="/" class="xl:hidden">
-        <img class="dark:hidden" src="/images/logo/logo.svg" alt="Logo" />
-        <img class="hidden dark:block" src="/images/logo/logo-dark.svg" alt="Logo" />
+        <div class="text-2xl font-bold text-gray-900 dark:text-white flex items-center gap-1">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-brand-500">
+            <path d="M12 2L2 7L12 12L22 7L12 2Z" fill="currentColor"/>
+            <path d="M2 17L12 22L22 17M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          MiPanel <span class="text-brand-500 text-sm ml-1 px-1.5 py-0.5 rounded bg-brand-100 dark:bg-brand-900/30">PRO</span>
+        </div>
       </a>
       <button (click)="toggleApplicationMenu()"
-        class="flex items-center justify-center w-10 h-10 text-gray-700 rounded-lg z-40 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-800 xl:hidden">
+        class="flex items-center justify-center w-9 h-9 text-gray-700 rounded-lg z-40 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-800 xl:hidden">
         <!-- Dots Icon -->
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
           <path fill-rule="evenodd" clip-rule="evenodd"
